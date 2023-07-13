@@ -35,4 +35,28 @@ public class RemoveDuplicate {
 
 	}
 
+	
+	
+	public static List<String> removeDuplicate(List<String> cityList) throws IllegalArgumentException{
+		List<String> uniquecityList = new ArrayList<String>();
+if(cityList==null ||cityList.size()==0) {
+	throw new IllegalArgumentException("Array cannot be empty");
+	
+}
+for (String city : cityList) {
+	if (!uniquecityList.contains(city)) {
+		uniquecityList.add(city);
+	} else {
+		throw new IllegalArgumentException("Array contains duplicate element");
+	}
+
+}
+
+//System.out.println(uniquecityList);
+
+return uniquecityList;
+
+		
+		
+	}
 }

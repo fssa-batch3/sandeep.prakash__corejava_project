@@ -16,14 +16,14 @@ public class TaskMethod {
 		System.out.println("Task " + findTask);
 	}
 
-	public static boolean findTaskByName(String name, ArrayList<Task> tasks) {
+	public static boolean findTaskByName(String name, ArrayList<Task> tasks)throws Exception {
 		for (Task task : tasks) {
 			if (task.taskName.equals(name)) {
 				return true;
 
 			}
 		}
-		return false;
+		 throw new Exception("Not found");
 
 	}
 
