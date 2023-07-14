@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class TaskMethod {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		ArrayList<Task> taskList = new ArrayList<>();
 		taskList.add(new Task("Taskplay", 3));
 		taskList.add(new Task("Taskeating", 2));
