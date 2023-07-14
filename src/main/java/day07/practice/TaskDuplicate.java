@@ -44,7 +44,10 @@ public class TaskDuplicate {
 		this.deadline = deadline;
 	}
 	
-
+    @Override
+    public String toString() {
+        return "TaskDuplicate [id=" + id + ", name=" + name + ", deadline=" + deadline + "]";
+    }
 
 	public static void main(String[] args) {
 
@@ -52,7 +55,7 @@ public class TaskDuplicate {
 
 		TaskDuplicate t1 = new TaskDuplicate(1, "taskplay", LocalDate.of(2023, 7, 15));
 		taskList.add(t1);
-	//	taskList.add(t1);
+		taskList.add(t1);
 		taskList.add(new TaskDuplicate(2, "taseat", LocalDate.of(2023, 7, 15)));
 		taskList.add(new TaskDuplicate(3, "tasklearn", LocalDate.of(2023, 7, 17)));
 
