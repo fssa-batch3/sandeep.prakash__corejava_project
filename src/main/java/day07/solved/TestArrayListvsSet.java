@@ -12,8 +12,7 @@ public class TestArrayListvsSet {
         cityNames.add("Chennai");
         cityNames.add("Bangalore");
  
-        System.out.println("Using ArrayList :" + cityNames);
-         
+        System.out.println("Using ArrayList :" + cityNames);   
         //Set stores unique elements and ignores duplication
         HashSet<String> cityNamesSet = new HashSet<String>();
         cityNamesSet.add("Delhi");

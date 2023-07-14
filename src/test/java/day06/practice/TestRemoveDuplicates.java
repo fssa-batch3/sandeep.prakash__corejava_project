@@ -13,7 +13,7 @@ public class TestRemoveDuplicates {
 	@Test
 
 	public void testValidarray() {
-
+        
 		List<String> cityList = new ArrayList<String>();
 		cityList.add("Chennai");
 		cityList.add("Bangalore");
