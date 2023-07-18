@@ -1,14 +1,12 @@
 package day08.practice;
 
 import java.util.*;
-import java.util.HashMap;
-import java.util.Map;
 
 public class HashMapEmployees {
 public static void main(String[] args) {
 	
 Scanner scan=new Scanner(System.in);
-Map<String, List<String>> departmentEmployees = new HashMap<>();
+Map<String, List<String>> departmentEmployees = new  TreeMap<>();
 
 
 for(int i=0;i<5;i++) {
@@ -37,6 +35,7 @@ for(int i=0;i<5;i++) {
 for(Map.Entry<String, List<String>> ex : departmentEmployees.entrySet()) {
 	String departName=ex.getKey();
 	List<String> empNames = ex.getValue();
+//	Collections.sort(empNames);
 	System.out.println(departName+": "+empNames);
 	
 }
@@ -53,7 +52,7 @@ public static boolean departmentNameEmployees(ArrayList<String> depOfEmployees) 
 	
 	
 	
-	Map<String, List<String>> departmentEmployees = new HashMap<>();
+	Map<String, List<String>> departmentEmployees = new TreeMap<>();
 	
 	System.out.println("Enter input like :Hr,Name");
 	
@@ -85,6 +84,7 @@ public static boolean departmentNameEmployees(ArrayList<String> depOfEmployees) 
 	for(Map.Entry<String, List<String>> ex : departmentEmployees.entrySet()) {
 		String departName=ex.getKey();
 		List<String> empNames = ex.getValue();
+		Collections.sort(empNames);
 		System.out.println(departName+": "+empNames);
 		
 	}
