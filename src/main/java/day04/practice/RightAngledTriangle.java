@@ -5,7 +5,7 @@ public class RightAngledTriangle extends Polygon {
 	protected double base;
 	protected double height;
 
-	public RightAngledTriangle(double length, double breadth) throws Exception {
+	public RightAngledTriangle(double base, double height) throws Exception {
 		super(3);
 		if (base <= 0 || height <= 0) {
 			throw new Exception("Invalid dimensions for a Triangle");

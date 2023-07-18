@@ -1,0 +1,36 @@
+package day08.misc;
+
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
+public class hashMap {
+	public static void main(String[] args) {
+		
+//		
+//			String arr[]= {"Prathuisha","Naresh","Prathuisha","Vishali","Nithilan","Prathuisha","Vishali"};
+//			Map<String,Integer> countMap =new  HashMap<String,Integer>();
+//			for(int i=0;i<arr.length;i++) {
+//				
+//				if(countMap.get(arr[i])==null) {
+//					countMap.put(arr[i], 1);
+//				}
+//				else {
+//					int count=countMap.get(arr[i]);
+//					count++;
+//					countMap.put(arr[i], count);
+//					
+//					
+//				}
+//				
+//			}
+//			System.out.println(countMap);
+		String str="HR,Sany";
+		String [] arrstr=str.split(",");
+		System.out.println(Arrays.toString(arrstr));
+
+	}
+
+}

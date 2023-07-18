@@ -46,9 +46,10 @@ if(cityList==null ||cityList.size()==0) {
 for (String city : cityList) {
 	if (!uniquecityList.contains(city)) {
 		uniquecityList.add(city);
-	} else {
-		throw new IllegalArgumentException("Array contains duplicate element");
-	}
+	} 
+//		else {
+//		throw new IllegalArgumentException("Array contains duplicate element");
+//	}
 
 }
 

@@ -66,7 +66,8 @@ public class TaskDuplicate {
 		}
 		 return true;
 
-		
+		 
+		 
 	}
 	public static boolean  validateTaskDate(LocalDate deadline)throws IllegalArgumentException {
 		LocalDate currentDate = LocalDate.now();
@@ -106,15 +107,12 @@ public class TaskDuplicate {
 	public static void main(String[] args) {
 
 		ArrayList<TaskDuplicate> taskList = new ArrayList<>();
-
 		TaskDuplicate t1 = new TaskDuplicate(1, "taskplay", LocalDate.of(2023, 7, 15));
 		taskList.add(t1);
 		taskList.add(t1);
 		taskList.add(new TaskDuplicate(2, "taseat", LocalDate.of(2023, 7, 15)));
 		taskList.add(new TaskDuplicate(3, "tasklearn", LocalDate.of(2023, 7, 17)));
-
 		System.out.println(taskList);
-
 		taskRemoveDuplicate(taskList);
 
 	}

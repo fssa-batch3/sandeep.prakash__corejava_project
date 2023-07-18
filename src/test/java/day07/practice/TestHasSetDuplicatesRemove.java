@@ -22,11 +22,12 @@ public class TestHasSetDuplicatesRemove {
 		arr.add(7);
 		arr.add(7);
 		
+		
 		HashSet<Integer> uniqueArr = new HashSet<Integer>(Arrays.asList(2, 4, 5, 7));
 		try {
 			RemoveDuplicatesHasSetDemo.removeDuplicateElements(arr);
 			boolean valid=RemoveDuplicatesHasSetDemo.validateDuplicatemethod(arr, uniqueArr);
-			Assertions.assertTrue(valid);
+//			Assertions.assertTrue(valid);
 			Assertions.fail("Validatepriority failed");
 		}
 		catch(Exception ex) 

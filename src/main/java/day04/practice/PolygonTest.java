@@ -13,7 +13,6 @@ public class PolygonTest {
 			
 			RightAngledTriangle ratt = new RightAngledTriangle(20.0, 10.0);
 			ratt.calculateArea();
-			ratt.circumference();
 			
 			
 		} catch (Exception e) {

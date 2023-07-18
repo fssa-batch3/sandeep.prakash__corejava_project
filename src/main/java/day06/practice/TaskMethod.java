@@ -20,7 +20,6 @@ public class TaskMethod {
 		for (Task task : tasks) {
 			if (task.taskName.equals(name)) {
 				return true;
-
 			}
 		}
 		 throw new Exception("Not found");
