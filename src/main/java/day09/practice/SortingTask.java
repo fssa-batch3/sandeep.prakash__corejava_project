@@ -77,12 +77,18 @@ public class SortingTask implements Comparable<SortingTask> {
 		return "SortingTask " + id +" "+  name +" "+deadline ;
 	}
 	
-	public static void sortNumber(ArrayList<SortingTask> taskList) {
+	public static ArrayList<SortingTask> sortNumberTask(ArrayList<SortingTask> taskList) throws IllegalArgumentException  {
+		if(taskList==null) {
+			throw new IllegalArgumentException("The array cannot be empty");
+			
+		}
+		
 		Collections.sort(taskList);
 	for(SortingTask task:taskList) {
 		System.out.println(task);
 		
 	}
+	return  taskList;
 
 	}
 	
@@ -96,7 +102,7 @@ public class SortingTask implements Comparable<SortingTask> {
 		taskList.add(new SortingTask(2, "taseat", LocalDate.of(2023, 7, 15)));
 		taskList.add(new SortingTask(3, "tasklearn", LocalDate.of(2023, 7, 17)));
 //		System.out.println(taskList);
-		sortNumber(taskList);
+		sortNumberTask(taskList);
 	}
 
 
