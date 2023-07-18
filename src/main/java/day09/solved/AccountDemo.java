@@ -42,6 +42,8 @@ class Account implements Comparable<Account> {
 
 	@Override
 	public int compareTo(Account o) {
+		System.out.println(balance+"ok");
+		System.out.println(o.getBalance()+"double ok");
 
 		if (balance == o.getBalance()) {
 			return 0;
