@@ -50,7 +50,7 @@ public class TestSortNumber {
 		
 		
 		try {
-			boolean data=SortingUser.ValidNumberSorting(0);
+		SortingUser.ValidNumberSorting(0);
 
 		Assertions.fail("testInValidarray failed");
 		} catch (IllegalArgumentException ex) {
