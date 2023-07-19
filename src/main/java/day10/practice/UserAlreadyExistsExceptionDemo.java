@@ -56,20 +56,20 @@ class User {
 }
 class UserValidator {
 	static ArrayList<User> arr = new ArrayList<User>();
-	public static String register(User user) throws UserAlreadyExistsException {
-		if (arr.size() == 0) {
-			arr.add(user);
-			return "User added";
+	public static boolean register(User user) throws UserAlreadyExistsException {
+		if (user == null) {
+			throw new UserAlreadyExistsException("object cannot null");
 		}
 		
 		for(User element:arr) {
 			if(element.emailId.equals(user.getEmailId())) {
-				throw new UserAlreadyExistsException("User already added");
+				throw new UserAlreadyExistsException("User Already added");
 			}
 			
 		}
-		arr.add(user);
-		return "User added";
+	arr.add(user);
+		System.out.println("User added");
+		return true;
 	}
 }
 public class UserAlreadyExistsExceptionDemo {
@@ -77,8 +77,8 @@ public class UserAlreadyExistsExceptionDemo {
 	public static void main(String[] args) {
 		User user1=new User(1, "sandeep", "sandeep@gmail.com");
 		User user2=new User(1, "sandeep", "sandeep@gmail.com");
-	String data1=UserValidator.register(user1);
-	String data2=UserValidator.register(user1);
+	boolean data1=UserValidator.register(user1);
+	boolean data2=UserValidator.register(user1);
 	System.out.println(data1);
 	System.out.println(data2);
 		
