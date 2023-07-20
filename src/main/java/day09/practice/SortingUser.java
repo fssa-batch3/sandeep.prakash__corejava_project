@@ -57,7 +57,6 @@ public class SortingUser {
 //		System.out.print(data);
 return true;
 
-	
 		
 	}
 	public static List<Integer> sortNumber(ArrayList<Integer> arrayList)throws IllegalArgumentException {
