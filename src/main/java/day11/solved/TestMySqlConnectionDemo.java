@@ -14,6 +14,8 @@ public class TestMySqlConnectionDemo {
 		ResultSet result = statement.executeQuery(query);
 		
 		while(result.next()) {
+			
+			
 		
 		System.out.println("id : " + result.getInt(1));
 		System.out.println("Name : " + result.getString(2));
